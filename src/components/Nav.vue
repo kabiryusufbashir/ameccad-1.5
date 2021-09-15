@@ -31,46 +31,46 @@
         </div>
     </div>
     <!-- Mobile Nav -->
-    <div id="nav" class="w-full fixed h-screen z-30 hidden bg-white py-8">
-        <div class="list-none p-2 text-xl border-t bg-white pt-20">
-            <li class="py-3 px-8">
-                <a href="/" class="flex justify-between items-center">
+    <div @click="menuClicked()" id="nav" class="w-full fixed h-screen z-30 hidden bg-white py-8">
+        <div class="list-none p-2 text-lg border-t bg-white pt-20">
+            <li class="py-3">
+                <router-link to="/" class="flex justify-between items-center">
                     <span>Home</span>
                     &nbsp;&nbsp;
                     <span><i class="fas fa-home text-3xl"></i></span>
-                </a>
+                </router-link>
             </li>
             <hr>
-            <li class="py-3 px-8" id="phone_nav_caret">
-                <a href="/about" class="flex justify-between items-center">
+            <li class="py-3" id="phone_nav_caret">
+                <router-link to="/about" class="flex justify-between items-center">
                     <span>About Us</span>
                     &nbsp;&nbsp;
                     <span><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg></span>
-                </a>
+                </router-link>
             </li>
             <hr>
-            <li class="py-3 px-8">
-                <a href="/courses" class="flex justify-between border-b-1 items-center">
+            <li class="py-3">
+                <router-link to="/courses" class="flex justify-between border-b-1 items-center">
                     <span>Courses</span>
                     &nbsp;&nbsp;
                     <span><i class="fas fa-dot-circle text-3xl"></i></span>
-                </a>
+                </router-link>
             </li>
             <hr>
-            <li class="py-3 px-8">
-                <a href="/team" class="flex justify-between items-center">
-                    <span>Team</span>
+            <li class="py-3">
+                <router-link to="/team" class="flex justify-between items-center">
+                    <span>Our Team</span>
                     &nbsp;&nbsp;
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                </a>
+                    <span><i class="fas fa-users text-3xl"></i></span>
+                </router-link>
             </li>
             <hr>
-            <li class="py-3 px-8">
-                <a href="/contact" class="flex justify-between items-center">
+            <li class="py-3">
+                <router-link to="/contact" class="flex justify-between items-center">
                     <span>Contact Us</span>
                     &nbsp;&nbsp;
-                    <span><i class="fas fa-home text-3xl"></i></span>
-                </a>
+                    <span><i class="fas fa-phone text-3xl"></i></span>
+                </router-link>
             </li>
         </div>
     </div>
@@ -80,6 +80,9 @@
     export default{
         name: 'Nav',
         methods:{
+            menuClicked(){
+                document.querySelector('#nav').classList.add('hidden')
+            },
             showMenu(){
                 let menu = document.querySelector('#menu');
                 let nav = document.querySelector('#nav');
