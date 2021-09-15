@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="py-7 text-center text-sm">
+        <div class="w-2/3 mx-auto py-7 text-center text-sm">
             Copyright &copy; 2021 Ameccad Training and Management Services. All Rights Reserved <br>
             Designed &amp; Developed by <a class="hover:text-blue-600" href="https://teampiccolo.com">Team Piccolo</a>    
         </div> 

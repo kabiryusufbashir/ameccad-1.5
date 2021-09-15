@@ -3,12 +3,12 @@
       <img class="object-cover w-full h-screen md:h-auto" src="../assets/images/bg_1.jpg" alt="AMECCAD IMAGES">
       <div class="w-full px-4 leading-snug absolute top-48 text-white text-2xl md:text-4xl items-center flex justify-center">
           <div class="text-left" data-aos="fade-up" data-aos-duration="3000">
-              <span class="text-5xl md:text-6xl font-bold text-white">
+              <span class="text-4xl md:text-6xl font-bold text-white">
                 AMEC CAD TRAINING <br>
                 AND<br> 
                 MANAGEMENT SERVICES <br>
               </span><br>
-              <span class="text-center text-xl md:text-xl text-white">
+              <span class="text-center text-lg md:text-xl text-white">
                 PROVIDING THE BEST ARCHITECTURAL AND ENGINEERING SOFTWARE TRAINING
               </span>
           </div>
