@@ -11,9 +11,18 @@
             </a>
             <div class="md:col-span-3 md:relative hidden md:block uppercase">
                 <nav class="md:flex justify-between list-none">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Courses</a></li>
+                    <li>
+                        <router-link to="/">Home</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/about">About</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/courses">Courses</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/team">Our Team</router-link>
+                    </li>
                     <li><a href="#">Contact Us</a></li>
                 </nav>
             </div>
@@ -41,6 +50,14 @@
             <li class="py-3 px-8">
                 <a href="#" class="flex justify-between border-b-1 items-center">
                     <span>Courses</span>
+                    &nbsp;&nbsp;
+                    <span><i class="fas fa-dot-circle text-3xl"></i></span>
+                </a>
+            </li>
+            <hr>
+            <li class="py-3 px-8">
+                <a href="#" class="flex justify-between border-b-1 items-center">
+                    <span>Our Team</span>
                     &nbsp;&nbsp;
                     <span><i class="fas fa-dot-circle text-3xl"></i></span>
                 </a>
