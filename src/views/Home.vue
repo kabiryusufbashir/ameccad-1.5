@@ -16,7 +16,7 @@
   </div>
   <div class="md:w-3/4 md:py-24 py-8 md:px-24 md:mx-auto px-8 text-justify">
       <div data-aos="fade-right">
-          <img src="../assets/images/logo.png" alt="Ameccad Logo" class="w-28 mx-auto my-2">
+          <img src="../assets/images/logo.png" alt="Ameccad Logo" class="w-24 mx-auto my-2">
           <p class="ml-4 py-1 mx-auto text-lg">
             AMEC CAD provide Intensive Training and Workshops on Information Technology (I.T), Architectural and Engineering software, Maintenance and Installation of such software, Engineering Consultancy, and Environmental Management Services.         Making indigenous designers with professional training on CAD and CADD software to face the global challenges in Design and drafting
           </p>
